@@ -11,7 +11,10 @@ class _CalculadoraState extends State<Calculadora> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: const Text('Calculadora de IMC'))),
+      appBar: AppBar(
+        title: const Center(child: Text('Calculadora de IMC')),
+        backgroundColor: Colors.blueAccent,
+      ),
       body: const Center(child: Text('Conteúdo da calculadora')),
     );
   }

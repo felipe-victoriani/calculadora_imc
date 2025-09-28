@@ -135,7 +135,7 @@ class _CalculadoraState extends State<Calculadora> {
                       filled: true,
                       prefixIcon: Icon(Icons.monitor_weight),
                     ),
-                    style: TextStyle(fontSize: 18),
+                    style: const TextStyle(fontSize: 18),
                   ),
                   const SizedBox(height: 16),
                   TextField(
@@ -148,7 +148,7 @@ class _CalculadoraState extends State<Calculadora> {
                       filled: true,
                       prefixIcon: Icon(Icons.height),
                     ),
-                    style: TextStyle(fontSize: 18),
+                    style: const TextStyle(fontSize: 18),
                   ),
                   const SizedBox(height: 24),
                   SizedBox(
@@ -177,6 +177,23 @@ class _CalculadoraState extends State<Calculadora> {
                     classificacao,
                     style: const TextStyle(fontSize: 18),
                     textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 40),
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.3),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Text(
+                      'Dev:Carlos Felipe Lima Victoriani',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ],
               ),
